@@ -11,12 +11,20 @@ npm install node-units
 
 ## Usage
 
-`node-units` comes with a few built in functions:
-
+### Functions
 * `importDB(file_name, cb)` - imports a custom unit database, `cb` takes a single argument `err`
 * `importDBSync(file_name)` - the sync version of `importDB`
 * `getDB()` - returns he currently used database of units as an object
 * `convert(type, value, from, to)` - converts `value` of `from` to `to`, returns the result or raises exception if conversion cannot be made
+
+### Properties
+* `types` - `types` is an object containing constants for each unit group.
+
+`types` with the default unit database looks like:
+```javascript
+{'TIME': 'time',
+ 'VOLUME': 'volume'};
+```
 
 ### Simple Usage
 
@@ -34,9 +42,9 @@ units.convert(units.types.TIME, 5, 'day', 'second');
 With `node-units` you can import custom unit definitions from files defined like the following:
 ```
 group:
-  long_name,longname,ln		1ln
-  another_unit,au		5ln
-  one_more,om			2au
+  long_name,longname,ln    1ln
+  another_unit,au          5ln
+  one_more,om              2au
 ```
 
 ```javascript
