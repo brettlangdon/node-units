@@ -1,0 +1,16 @@
+time:
+  second,sec,s		1s
+  minute,min,m		60s
+  hour,hr,h		3600s
+  day			86400s
+
+volume:
+  liter,L		1L
+  milliliter,mL		0.001L
+  gallon,gal		3.78541L
+  pint			0.473176L
+  quart,qt		0.946353L
+  tablespoon,tbl	0.03125pint
+  teaspoon,tsp		0.33333333333tbl
+  cup			16tbl
+  gill,gi		0.1182941L
