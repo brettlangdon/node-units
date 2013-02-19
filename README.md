@@ -15,6 +15,7 @@ npm install node-units
 * `importDB(file_name, cb)` - imports a custom unit database, `cb` takes a single argument `err`
 * `importDBSync(file_name)` - the sync version of `importDB`
 * `getDB()` - returns he currently used database of units as an object
+* `getUnitType(unit)` - given a single unit it will return back `{'type': <unit_group>, 'unit': <base_unit>, 'modifier': <unit_modifier>}`
 * `convert(conversion_string)` - where `conversion_string` is of the form `<value> <from_unit> to <to_unit>`
 
 ### Properties
@@ -71,6 +72,27 @@ units.importDBSync('my_custom.units');
 var result = units.convert('5 minutes to s');
 // result == 250
 ```
+
+## Values
+`node-units` uses `numberizer` which is used to convert string versions of numbers into digits, for example, `forty two` becomes `42` and `one fifth` becomes `0.2`.
+
+What is currently not supported is mathematical symbols like `1/5 days`.
+
+## Prefixes
+
+`node-units` comes with a plethora of built in long and shortname unit prefixes like:
+* nano-, n-
+* micro-, mu-
+* mega-
+* giga-
+* milli-, m-
+* centi-, c-
+* and others
+
+## Variations
+
+`node-units` also understands that it makes more sense to say things like `five days` rather than `five day` so when a unit is not know it will automatically look if the unit
+ends with either `s`, `es` or `ies`.
 
 ## License
 

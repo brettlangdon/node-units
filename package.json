@@ -1,6 +1,6 @@
 {
   "name": "node-units",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Node.JS unit conversion library with customizable units",
   "main": "lib/index.js",
   "directories": {
