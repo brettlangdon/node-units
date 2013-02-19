@@ -3,10 +3,10 @@ time:
   minute,min,m		60s
   hour,hr,h		3600s
   day			86400s
+  week			7day
 
 volume:
   liter,L		1L
-  milliliter,mL		0.001L
   gallon,gal		8pint
   pint			0.125gal
   quart,qt		2pint
@@ -14,3 +14,17 @@ volume:
   teaspoon,tsp		0.33333333333tbl
   cup			16tbl
   gill,gi		0.1182941L
+
+storage:
+  bit,b			1bit
+  byte,B		8bit
+  kilobit,kb		1024bit
+  kilobyte,KB		1024byte
+  megabit,mb		1048576bit
+  megabyte,MB		1048576byte
+  gigabit,gb		1073741824bit
+  gigabyte,GB		1073741824byte
+  terabit,tb		1099511627776bit
+  terabyte,TB		1099511627776byte
+  petabit,pb		1125899906842624bit
+  petabyte,PB		1125899906842624byte
