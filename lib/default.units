@@ -7,9 +7,9 @@ time:
 volume:
   liter,L		1L
   milliliter,mL		0.001L
-  gallon,gal		3.78541L
-  pint			0.473176L
-  quart,qt		0.946353L
+  gallon,gal		8pint
+  pint			0.125gal
+  quart,qt		2pint
   tablespoon,tbl	0.03125pint
   teaspoon,tsp		0.33333333333tbl
   cup			16tbl

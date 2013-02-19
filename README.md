@@ -15,7 +15,7 @@ npm install node-units
 * `importDB(file_name, cb)` - imports a custom unit database, `cb` takes a single argument `err`
 * `importDBSync(file_name)` - the sync version of `importDB`
 * `getDB()` - returns he currently used database of units as an object
-* `convert(type, value, from, to)` - converts `value` of `from` to `to`, returns the result or raises exception if conversion cannot be made
+* `convert(conversion_string)` - where `conversion_string` is of the form `<value> <from_unit> to <to_unit>`
 
 ### Properties
 * `types` - `types` is an object containing constants for each unit group.
@@ -31,10 +31,10 @@ npm install node-units
 ```javascript
 var units = require('node-units');
 
-var result = units.convert('volume', 5, 'gill', 'mL');
+var result = units.convert('5 gills to mL');
 // result == 591.4705
 
-units.convert(units.types.TIME, 5, 'day', 'second');
+units.convert('five days to seconds');
 ```
 
 ### Custom Units
@@ -42,9 +42,9 @@ units.convert(units.types.TIME, 5, 'day', 'second');
 With `node-units` you can import custom unit definitions from files defined like the following:
 ```
 group:
-  long_name,longname,ln    1ln
-  another_unit,au          5ln
-  one_more,om              2au
+  longname,longname,ln    1ln
+  anotherunit,au          5ln
+  onemore,om              2au
 ```
 
 ```javascript
@@ -52,7 +52,7 @@ var units = require('node-units');
 
 units.importDBSync('my_custom.units');
 
-var result = units.convert(units.types.GROUP, 5, 'au', 'one_more');
+var result = units.convert('five au to onemores');
 // result == 10
 ```
 
@@ -68,7 +68,7 @@ var units = require('node-units');
 
 units.importDBSync('my_custom.units');
 
-var result = units.convert('time', 5, 'minute', 's');
+var result = units.convert('5 minutes to s');
 // result == 250
 ```
 
