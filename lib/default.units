@@ -5,15 +5,31 @@ time:
   day			86400s
   week			7day
 
+distance:
+  meter,m		1m
+  feet,ft		0.3048m
+  inch,in		0.0254m
+  yard,yd		0.9144m
+  mile,mi		1609.34m
+
+mass:
+  ton,t			1000000gm
+  gram,gm		1gm
+  pound,lb		16gm
+  ounce,oz		28.3495gm
+  stone,st		6350.29gm
+
 volume:
-  liter,L		1L
-  gallon,gal		8pint
-  pint			0.125gal
-  quart,qt		2pint
-  tablespoon,tbl	0.03125pint
-  teaspoon,tsp		0.33333333333tbl
-  cup			16tbl
-  gill,gi		0.1182941L
+  liter,L		202.884tsp
+  gallon,gal		768tsp
+  pint			96tsp
+  quart,qt		192tsp
+  tablespoon,tbsp	3tsp
+  teaspoon,tsp		1tsp
+  cup			48tsp
+  ounce,oz		6tsp
+  gill,gi		24tsp
+  barrel,bbl		24192tsp
 
 storage:
   bit,b			1bit
