@@ -15,7 +15,7 @@ distance:
 mass:
   ton,t			1000000gm
   gram,gm		1gm
-  pound,lb		16gm
+  pound,lb		453.59237gm
   ounce,oz		28.3495gm
   stone,st		6350.29gm
 
