@@ -1,6 +1,6 @@
 {
   "name": "node-units",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Node.JS unit conversion library with customizable units",
   "main": "lib/index.js",
   "directories": {
@@ -21,6 +21,9 @@
     "conversion"
   ],
   "author": "Brett Langdon <brett@blangdon.com> (www.brett.is)",
+  "contributors": [
+    "Marc-André Arseneault <marcandre.arseneault@me.com> (http://www.arsnl.ca/)"
+  ],
   "license": "MIT",
   "dependencies": {
     "numerizer": "0.0.2"
